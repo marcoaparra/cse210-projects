@@ -9,10 +9,31 @@ class Program
         Console.Write("What is your grade percentage? ");
         string number = Console.ReadLine();
         double percentage = double.Parse(number);
-
+        string letter = "";
+        
+        if (percentage >= 90)
+        {
+            letter = "A";
+        }
+        else if (percentage >= 80)
+        {
+            letter = "B";
+        }
+        else if (percentage >= 70)
+        {
+            letter = "C";
+        }
+        else if (percentage >= 60)
+        {
+            letter = "D";
+        }
+        else
+        {
+            letter = "F";
+        }
             if (percentage >= 90)
             {
-                Console.WriteLine("Your grade is A.");
+                Console.WriteLine($"Your grade is {letter}.");
                 if (percentage >= 90)
                 {
                     Console.WriteLine("Congratulations! You passed the course!");
@@ -20,7 +41,7 @@ class Program
             }
             else if (percentage >= 80)
             {
-                Console.WriteLine("Your grade is B.");
+                Console.WriteLine($"Your grade is {letter}.");
                 if (percentage >= 80)
                 {
                     Console.WriteLine("Congratulations! You passed the course!");
@@ -28,7 +49,7 @@ class Program
             }
             else if (percentage >= 70)
             {
-                Console.WriteLine("Your grade is C.");
+                Console.WriteLine($"Your grade is {letter}.");
                 if (percentage >= 70)
                 {
                     Console.WriteLine("Congratulations! You passed the course!");
@@ -36,7 +57,7 @@ class Program
             }
             else if (percentage >= 60)
             {
-                Console.WriteLine("Your grade is D.");
+                Console.WriteLine($"Your grade is {letter}.");
                 if (percentage <= 69)
                 {
                     Console.WriteLine("I'm sorry, you did not pass the course.");
@@ -44,7 +65,7 @@ class Program
             }
             else if (percentage < 60)
             {
-                Console.WriteLine("Your grade is F.");
+                Console.WriteLine($"Your grade is {letter}.");
                  if (percentage <= 69)
                 {
                     Console.WriteLine("I'm sorry, you did not pass the course. Keep trying! You can do it!");
