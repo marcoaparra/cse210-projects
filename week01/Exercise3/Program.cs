@@ -11,6 +11,8 @@ class Program
 
         int yourGuess = -1;
 
+        //int yourGuess = 1; to create a preexisting variable.
+
         //Console.WriteLine($"What is the magic number? {magicNumber}");
         //string yourGuess = Console.ReadLine();
         //int yourGuessNumber = int.Parse(yourGuess);
