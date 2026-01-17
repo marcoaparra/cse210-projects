@@ -10,7 +10,7 @@ class Program
         string number = Console.ReadLine();
         double percentage = double.Parse(number);
         string letter = "";
-        
+
         if (percentage >= 90)
         {
             letter = "A";
@@ -31,6 +31,10 @@ class Program
         {
             letter = "F";
         }
+
+        /* 
+        This is my first idea. I knew that was wrong, it was not simple.
+
             if (percentage >= 90)
             {
                 Console.WriteLine($"Your grade is {letter}.");
@@ -75,5 +79,18 @@ class Program
             {
                 Console.WriteLine("Invalid input. Please enter a numeric grade percentage.");
             }
-    }
+        */
+
+        Console.WriteLine($"Your grade is {letter}.");
+        
+        if (percentage >= 70)
+        {
+            Console.WriteLine("Congratulations! You passed the course!");
+        }
+
+        else
+        {
+            Console.WriteLine("I'm sorry, you did not pass the course. Keep trying! You can do it!");
+        }
+}
 }
